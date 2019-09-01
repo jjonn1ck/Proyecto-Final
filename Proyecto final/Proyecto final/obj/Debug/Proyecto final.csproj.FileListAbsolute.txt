@@ -1,0 +1,83 @@
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Proyecto final.dll.config
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Proyecto final.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Proyecto final.pdb
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\csc.exe
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\csc.exe.config
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\csc.rsp
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\csi.exe
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\csi.exe.config
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\csi.rsp
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.Managed.Core.targets
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.AppContext.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Collections.Immutable.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Console.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.IO.Compression.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.IO.FileSystem.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.IO.Pipes.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Reflection.Metadata.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.AccessControl.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.Claims.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Security.Principal.Windows.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.ValueTuple.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Xml.XPath.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\vbc.exe
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\vbc.exe.config
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\vbc.rsp
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\VBCSCompiler.exe
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\roslyn\VBCSCompiler.exe.config
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Antlr3.Runtime.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Microsoft.Web.Infrastructure.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Newtonsoft.Json.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Helpers.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Mvc.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Optimization.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Razor.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.WebPages.Deployment.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.WebPages.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.WebPages.Razor.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\WebGrease.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Helpers.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Mvc.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Optimization.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.Razor.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.WebPages.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.WebPages.Deployment.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\System.Web.WebPages.Razor.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Newtonsoft.Json.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Antlr3.Runtime.pdb
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.Helpers.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.Mvc.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.Optimization.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.Razor.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.WebPages.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.WebPages.Deployment.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\bin\es\System.Web.WebPages.Razor.resources.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.csprojAssemblyReference.cache
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.csproj.CoreCompileInputs.cache
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.csproj.CopyComplete
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.dll
+E:\PROYECTO_FINAL\proyecto-final\Proyecto final\Proyecto final\obj\Debug\Proyecto final.pdb
