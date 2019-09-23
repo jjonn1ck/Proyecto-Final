@@ -46,14 +46,14 @@ namespace Mibar7._9.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_persona,nombre,apellido,fecha_nac,telefono,email,direccion,rol,nick,pass,confirmar_pass")] persona persona)
+        public ActionResult Create([Bind(Include = "id_persona,nombre,apellido,fecha_nac,telefono,email,direccion,nick,pass,confirmar_pass")] persona persona)
         {
             if (ModelState.IsValid)
             {
-                persona.rol = "Cliente";
+                persona.rol = "CLIENTE";
                 db.persona.Add(persona);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Home");
             }
 
             return View(persona);

@@ -43,7 +43,7 @@ namespace Mibar7._9.Models
         [Display(Name = "Direccion")]
         [StringLength(100)]
         public string direccion { get; set; }
-        [Required]
+
         [StringLength(24)]
         public string rol { get; set; }
         [Required]
@@ -57,6 +57,7 @@ namespace Mibar7._9.Models
         public string pass { get; set; }
 
         [Required]
+        [NotMapped]
         [StringLength(24)]
         [DataType(DataType.Password)]
         [Display(Name = "Confirmar contraseña")]
