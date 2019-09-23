@@ -206,9 +206,12 @@
     <Content Include="Views\Home\guarnicion.cshtml" />
     <Content Include="Views\Home\cargarUsuario.cshtml" />
     <Content Include="Views\persona\Create.cshtml" />
+    <Content Include="Views\Home\IniciarSesion.cshtml" />
+    <Content Include="Views\EditorTemplates\DateTime.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\personas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

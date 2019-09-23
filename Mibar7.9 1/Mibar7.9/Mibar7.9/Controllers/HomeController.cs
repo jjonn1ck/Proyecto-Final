@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mibar7._9.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace Mibar7._9.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
             return View();
@@ -46,5 +48,48 @@ namespace Mibar7._9.Controllers
         {
             return View();
         }
+
+
+        public ActionResult IniciarSesion()
+        {
+
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult IniciarSesion(persona persona)
+        {
+
+            string usuario = persona.nick;
+            string pass = persona.pass;
+
+
+
+            foreach (persona usu in db.persona.Where(u => u.nick == usuario && u.pass == pass))
+            {
+                /* if (usu.idRol == 1)
+                 {
+
+                     return RedirectToAction("Index", "OrdenDeTrabajo", usu);
+
+
+                 }
+
+                 else
+                 {
+
+                     return RedirectToAction("IndexEmpleado", "OrdenDeTrabajo", usu);
+                 }*/
+
+                return RedirectToAction("Index");
+
+
+            }
+
+            return View("Incorrecto");
+
+        }
     }
+
 }

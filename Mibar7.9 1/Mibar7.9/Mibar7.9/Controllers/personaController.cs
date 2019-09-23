@@ -1,89 +1,128 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Mibar7._9.Models;
 
 namespace Mibar7._9.Controllers
 {
     public class personaController : Controller
     {
-        // GET: persona
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+        // GET: personas
         public ActionResult Index()
         {
-            return View();
+            return View(db.persona.ToList());
         }
 
-        // GET: persona/Details/5
-        public ActionResult Details(int id)
+        // GET: personas/Details/5
+        public ActionResult Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            persona persona = db.persona.Find(id);
+            if (persona == null)
+            {
+                return HttpNotFound();
+            }
+            return View(persona);
         }
 
-        // GET: persona/Create
+        // GET: personas/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: persona/Create
+        // POST: personas/Create
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "id_persona,nombre,apellido,fecha_nac,telefono,email,direccion,rol,nick,pass,confirmar_pass")] persona persona)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
-
+                persona.rol = "Cliente";
+                db.persona.Add(persona);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            catch
+
+            return View(persona);
+        }
+
+        // GET: personas/Edit/5
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
             {
-                return View();
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-        }
-
-        // GET: persona/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: persona/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
+            persona persona = db.persona.Find(id);
+            if (persona == null)
             {
-                // TODO: Add update logic here
+                return HttpNotFound();
+            }
+            return View(persona);
+        }
 
+        // POST: personas/Edit/5
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "id_persona,nombre,apellido,fecha_nac,telefono,email,direccion,rol,nick,pass,confirmar_pass")] persona persona)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(persona).State = EntityState.Modified;
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(persona);
         }
 
-        // GET: persona/Delete/5
-        public ActionResult Delete(int id)
+        // GET: personas/Delete/5
+        public ActionResult Delete(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            persona persona = db.persona.Find(id);
+            if (persona == null)
+            {
+                return HttpNotFound();
+            }
+            return View(persona);
         }
 
-        // POST: persona/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        // POST: personas/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
+            persona persona = db.persona.Find(id);
+            db.persona.Remove(persona);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
-                return RedirectToAction("Index");
-            }
-            catch
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
             {
-                return View();
+                db.Dispose();
             }
+            base.Dispose(disposing);
         }
     }
 }

@@ -28,6 +28,7 @@ namespace Mibar7._9.Models
         [StringLength(24)]
         public string apellido { get; set; }
         [Required]
+       // [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}", ApplyFormatInEditMode = true)]
         [Display(Name = "Fecha de nacimiento")]
         public DateTime? fecha_nac { get; set; }
         [Required]
@@ -54,6 +55,13 @@ namespace Mibar7._9.Models
         [DataType(DataType.Password)]
         [Display(Name = "Contraseña")]
         public string pass { get; set; }
+
+        [Required]
+        [StringLength(24)]
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirmar contraseña")]
+        [Compare("pass",ErrorMessage = "Las contraseñas no coinciden")]
+        public string confirmar_pass { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<cabecera_factura> cabecera_factura { get; set; }
