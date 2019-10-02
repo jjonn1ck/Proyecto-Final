@@ -4,8 +4,15 @@ namespace Mibar7._9.Models
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.Owin.Security;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.AspNet.Identity.EntityFramework;
+    using Microsoft.Owin;
+    using Microsoft.Owin.Security.Cookies;
+    using Owin;
 
-    public partial class ApplicationDbContext : DbContext
+    public partial class ApplicationDbContext : IdentityDbContext<AppUser>
     {
         public ApplicationDbContext()
             : base("name=ApplicationDbContext")
@@ -124,6 +131,9 @@ namespace Mibar7._9.Models
             modelBuilder.Entity<postre>()
                 .Property(e => e.precio)
                 .HasPrecision(19, 4);
+
+            base.OnModelCreating(modelBuilder);
         }
+
     }
 }
