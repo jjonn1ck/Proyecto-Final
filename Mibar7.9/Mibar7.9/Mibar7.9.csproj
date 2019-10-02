@@ -157,13 +157,20 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\personaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201910020419449_loco.cs" />
     <Compile Include="Migrations\201910020419449_loco.Designer.cs">
       <DependentUpon>201910020419449_loco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910021630154_nuevoscampos.cs" />
+    <Compile Include="Migrations\201910021630154_nuevoscampos.Designer.cs">
+      <DependentUpon>201910021630154_nuevoscampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910021641411_borarad tabla usuario.cs" />
+    <Compile Include="Migrations\201910021641411_borarad tabla usuario.Designer.cs">
+      <DependentUpon>201910021641411_borarad tabla usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\agrup_plato_combinado.cs" />
@@ -176,7 +183,6 @@
     <Compile Include="Models\datalle_factura.cs" />
     <Compile Include="Models\guarnicion.cs" />
     <Compile Include="Models\mesa.cs" />
-    <Compile Include="Models\persona.cs" />
     <Compile Include="Models\plato.cs" />
     <Compile Include="Models\plato_combinado.cs" />
     <Compile Include="Models\postre.cs" />
@@ -267,6 +273,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201910020419449_loco.resx">
       <DependentUpon>201910020419449_loco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910021630154_nuevoscampos.resx">
+      <DependentUpon>201910021630154_nuevoscampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910021641411_borarad tabla usuario.resx">
+      <DependentUpon>201910021641411_borarad tabla usuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

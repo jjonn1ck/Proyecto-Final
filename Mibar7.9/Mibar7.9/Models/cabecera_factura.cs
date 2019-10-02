@@ -25,11 +25,11 @@ namespace Mibar7._9.Models
 
         public DateTime? fecha_alta { get; set; }
 
-        public virtual persona persona { get; set; }
+        public virtual AppUser persona { get; set; }
 
         public virtual mesa mesa { get; set; }
 
-        public virtual persona persona1 { get; set; }
+        public virtual AppUser persona1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<datalle_factura> datalle_factura { get; set; }

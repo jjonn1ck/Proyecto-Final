@@ -25,7 +25,6 @@ namespace Mibar7._9.Models
         public virtual DbSet<datalle_factura> datalle_factura { get; set; }
         public virtual DbSet<guarnicion> guarnicion { get; set; }
         public virtual DbSet<mesa> mesa { get; set; }
-        public virtual DbSet<persona> persona { get; set; }
         public virtual DbSet<plato> plato { get; set; }
         public virtual DbSet<plato_combinado> plato_combinado { get; set; }
         public virtual DbSet<postre> postre { get; set; }
@@ -73,48 +72,6 @@ namespace Mibar7._9.Models
             modelBuilder.Entity<mesa>()
                 .Property(e => e.estado)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.nombre)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.apellido)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.telefono)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.email)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.direccion)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.rol)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.nick)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .Property(e => e.pass)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<persona>()
-                .HasMany(e => e.cabecera_factura)
-                .WithOptional(e => e.persona)
-                .HasForeignKey(e => e.id_cliente);
-
-            modelBuilder.Entity<persona>()
-                .HasMany(e => e.cabecera_factura1)
-                .WithOptional(e => e.persona1)
-                .HasForeignKey(e => e.id_mozo);
 
             modelBuilder.Entity<plato>()
                 .Property(e => e.descripcion)

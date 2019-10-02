@@ -534,3 +534,5 @@ E:\REPOSITORIOS\proyecto-final\Mibar7.9\Mibar7.9\bin\Microsoft.Owin.Security.Coo
 E:\REPOSITORIOS\proyecto-final\Mibar7.9\Mibar7.9\bin\Microsoft.Owin.Security.OAuth.xml
 E:\REPOSITORIOS\proyecto-final\Mibar7.9\Mibar7.9\obj\Debug\Mibar7._9.Migrations.loco.resources
 E:\REPOSITORIOS\proyecto-final\Mibar7.9\Mibar7.9\obj\Debug\Mibar7.9.csproj.GenerateResource.cache
+E:\REPOSITORIOS\proyecto-final\Mibar7.9\Mibar7.9\obj\Debug\Mibar7._9.Migrations.nuevoscampos.resources
+E:\REPOSITORIOS\proyecto-final\Mibar7.9\Mibar7.9\obj\Debug\Mibar7._9.Migrations.boraradtablausuario.resources

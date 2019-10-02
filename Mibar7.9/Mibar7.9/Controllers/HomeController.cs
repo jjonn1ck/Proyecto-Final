@@ -58,15 +58,15 @@ namespace Mibar7._9.Controllers
 
 
         [HttpPost]
-        public ActionResult IniciarSesion(persona persona)
+        public ActionResult IniciarSesion(AppUser AppUser)
         {
 
-            string usuario = persona.nick;
-            string pass = persona.pass;
+            string usuario = AppUser.UserName;
+            string pass = AppUser.PasswordHash;
 
 
 
-            foreach (persona usu in db.persona.Where(u => u.nick == usuario && u.pass == pass))
+            foreach (AppUser usu in db.Users.Where(u => u.UserName == usuario && u.PasswordHash == pass))
             {
                 /* if (usu.idRol == 1)
                  {
