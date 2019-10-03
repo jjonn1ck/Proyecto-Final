@@ -156,6 +156,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AppUsersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -171,6 +172,14 @@
     <Compile Include="Migrations\201910021641411_borarad tabla usuario.cs" />
     <Compile Include="Migrations\201910021641411_borarad tabla usuario.Designer.cs">
       <DependentUpon>201910021641411_borarad tabla usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910021931275_AspNetIdentity_RenameTables.cs" />
+    <Compile Include="Migrations\201910021931275_AspNetIdentity_RenameTables.Designer.cs">
+      <DependentUpon>201910021931275_AspNetIdentity_RenameTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910021942360_cambio de nombres a campo.cs" />
+    <Compile Include="Migrations\201910021942360_cambio de nombres a campo.Designer.cs">
+      <DependentUpon>201910021942360_cambio de nombres a campo.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\agrup_plato_combinado.cs" />
@@ -250,6 +259,11 @@
     <Content Include="Views\persona\Create.cshtml" />
     <Content Include="Views\Home\IniciarSesion.cshtml" />
     <Content Include="Views\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\AppUsers\Create.cshtml" />
+    <Content Include="Views\AppUsers\Delete.cshtml" />
+    <Content Include="Views\AppUsers\Details.cshtml" />
+    <Content Include="Views\AppUsers\Edit.cshtml" />
+    <Content Include="Views\AppUsers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,6 +293,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910021641411_borarad tabla usuario.resx">
       <DependentUpon>201910021641411_borarad tabla usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910021931275_AspNetIdentity_RenameTables.resx">
+      <DependentUpon>201910021931275_AspNetIdentity_RenameTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910021942360_cambio de nombres a campo.resx">
+      <DependentUpon>201910021942360_cambio de nombres a campo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

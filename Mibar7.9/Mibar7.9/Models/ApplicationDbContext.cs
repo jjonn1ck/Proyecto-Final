@@ -90,7 +90,14 @@ namespace Mibar7._9.Models
                 .HasPrecision(19, 4);
 
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<AppUser>().ToTable("usuario");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("usuario-roles");
+            modelBuilder.Entity<IdentityUserLogin>().ToTable("logins-usuario");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("claims-usuario");
+            modelBuilder.Entity<IdentityRole>().ToTable("rol");
         }
 
+        public System.Data.Entity.DbSet<Mibar7._9.Models.AppUser> AppUsers { get; set; }
     }
 }
