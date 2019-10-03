@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BarSanAntonioAPP.Models
@@ -65,6 +66,23 @@ namespace BarSanAntonioAPP.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Nombre")]
+        [StringLength(24)]
+        public string nombre { get; set; }
+        [Required]
+        [Display(Name = "Apellido")]
+        [StringLength(24)]
+        public string apellido { get; set; }
+
+        [Required]
+        [Display(Name = "Fecha de nacimiento")]
+        public DateTime? fecha_nac { get; set; }
+        [Required]
+        [Display(Name = "Direccion")]
+        [StringLength(100)]
+        public string direccion { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Correo electrónico")]
         public string Email { get; set; }
@@ -79,6 +97,10 @@ namespace BarSanAntonioAPP.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Telefono")]
+        public string PhoneNumber { get; set; }
     }
 
     public class ResetPasswordViewModel

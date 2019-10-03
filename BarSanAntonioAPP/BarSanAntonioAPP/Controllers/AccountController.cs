@@ -151,7 +151,7 @@ namespace BarSanAntonioAPP.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, nombre=model.nombre,apellido=model.apellido,direccion=model.direccion,fecha_nac=model.fecha_nac,PhoneNumber=model.PhoneNumber };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
