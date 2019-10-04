@@ -72,13 +72,16 @@ namespace BarSanAntonioAPP.Controllers
             {
                 return View(model);
             }
-
             // No cuenta los errores de inicio de sesión para el bloqueo de la cuenta
             // Para permitir que los errores de contraseña desencadenen el bloqueo de la cuenta, cambie a shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
+                    string user = SignInManager.AuthenticationManager.AuthenticationResponseGrant.Identity.GetUserId();
+                    if (UserManager.IsInRole(user, "Admin"))
+                        return RedirectToAction("Home", "Admin");
+                    else
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
