@@ -1,0 +1,6 @@
+use BarSanAntonioAPP
+
+insert into rol (Id,Name) values (1,'Admin')
+insert into rol (Id,Name) values (2,'Cliente')
+insert into rol (Id,Name) values (3,'Mesero')
+insert into rol (Id,Name) values (4,'Cajero')
