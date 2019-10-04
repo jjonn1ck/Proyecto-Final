@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AsignarRoles";
+}
+
+<h2>Asignacion de roles a usuarios</h2>
+
+@using (Html.BeginForm("AsignarRoles", "Admin", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.Label("Ingrese el e-mail del usuario:", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBox("Email")
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.Label("Escoja el rol que desea asignarle:", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownList("roles",new SelectList(new[] { "Admin","Cliente","Mesero","Cajero"}))
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Asignar rol" />
+        </div>
+    </div>
+}
+

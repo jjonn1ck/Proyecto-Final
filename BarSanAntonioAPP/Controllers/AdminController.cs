@@ -13,5 +13,10 @@ namespace BarSanAntonioAPP.Controllers
         {
             return View();
         }
+
+        public ActionResult AsignarRoles()
+        {
+            return View();
+        }
     }
 }

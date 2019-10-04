@@ -284,10 +284,10 @@
     <Content Include="Views\Admin\Shared\_Layout.cshtml" />
     <Content Include="Views\Admin\Shared\Error.cshtml" />
     <Content Include="Views\Admin\Shared\Lockout.cshtml" />
+    <Content Include="Views\Admin\AsignarRoles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\caca\" />
     <Folder Include="Views\Cajero\" />
     <Folder Include="Views\Mesero\" />
   </ItemGroup>
