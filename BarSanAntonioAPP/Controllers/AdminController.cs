@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarSanAntonioAPP.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace BarSanAntonioAPP.Controllers
 {
     public class AdminController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         // GET: Admin
         public ActionResult Home()
         {
@@ -16,6 +18,9 @@ namespace BarSanAntonioAPP.Controllers
 
         public ActionResult AsignarRoles()
         {
+            var listadoRoles = db.Roles.Select(x => x.Name).ToList();
+
+            ViewBag.listadosroles= listadoRoles;
             return View();
         }
     }

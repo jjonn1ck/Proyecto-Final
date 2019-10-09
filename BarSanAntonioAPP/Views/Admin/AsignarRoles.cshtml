@@ -20,7 +20,7 @@
     <div class="form-group">
         @Html.Label("Escoja el rol que desea asignarle:", new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.DropDownList("roles",new SelectList(new[] { "Admin","Cliente","Mesero","Cajero"}))
+            @Html.DropDownList("roles",new SelectList(ViewBag.listadosroles))
         </div>
     </div>
 
